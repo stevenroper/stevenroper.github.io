@@ -47,32 +47,35 @@ html, body {
 .info__social {
 	width: 100%;
 	overflow: auto;
+	box-sizing: border-box;
+	margin-top: 10px;
 }
 
 .info__social ul {
 	padding: 0;
+	text-align: center;
 }
 
-.social--link {
-	margin: 0 auto;
+.info__social li {
 	display: inline-block;
-	float: left;
-	overflow: auto;
 }
 
-.social--link a {
-	margin: 0 auto;
+.social--link, .social--link a {
 	overflow: auto;
 }
 
 .social--icon {
 	width: 60px;
 	height: 60px;
-	margin: 0 auto;
 	text-align: center;
 	padding-top: calc(65px / 4);
 	background: #fff;
 	color: #525453;
+}
+
+.social--icon:hover {
+	background: #525453;
+	color: #fff;
 }
 
 .arrow-down {
