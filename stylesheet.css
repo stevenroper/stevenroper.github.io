@@ -73,9 +73,43 @@ html, body {
 	color: #525453;
 }
 
+@-webkit-keyframes socialHover {
+	to {
+		background: #525453;
+		color: #fff;
+	}
+}
+
+@-moz-keyframes socialHover {
+	to {
+		background: #525453;
+		color: #fff;
+	}
+}
+
+@-ms-keyframes socialHover {
+	to {
+		background: #525453;
+		color: #fff;
+	}
+}
+
+@keyframes socialHover {
+	to {
+		background: #525453;
+		color: #fff;
+	}
+}
+
 .social--icon:hover {
-	background: #525453;
-	color: #fff;
+	-webkit-animation: socialHover .5s;
+	-moz-animation: socialHover .5s;
+	-ms-animation: socialHover .5s;
+	animation: socialHover .5s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 }
 
 .arrow-down {
