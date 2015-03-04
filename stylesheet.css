@@ -2,6 +2,10 @@
 	border: 1px solid red;
 }*/
 
+hr {
+	margin-top: 1px;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -169,10 +173,11 @@ html, body {
 .contact__container textarea {
 	width: 100%;
 	border: none;
-	border: 1px solid #525453;
+	border-bottom: 1px solid #525453;
 	margin: 10px 0;
 	padding-left: 10px;
-	padding-top: 10px;
+	padding-bottom: 15px;
+	resize: vertical;
 }
 
 .contact__container input:focus, .contact__container textarea:focus {
