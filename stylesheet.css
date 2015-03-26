@@ -126,24 +126,48 @@ html, body {
 	transform: rotate(-135deg);
 }
 
-.bio-container {
+.bio-container-lg {
 	width: 100%;
 	background: #000;
-	box-sizing: border-box;
-	color: #fff;
-	padding: 20px;
 }
 
-.bio-container p {
+.bio-container-sm {
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	color: #fff;
+	padding: 20px;
+	overflow: auto;
+}
+
+.bio-container-sm p {
 	font-size: 2em;
 }
 
-.bio-container li {
+.bio-container-sm li {
 	font-size: 1.5em;
 }
 
 .bio, .skills {
+	display: block;
+	margin: auto;
 	width: 100%;
+	max-width: 600px;
+}
+
+@media screen and (min-width: 650px) {
+	.skills hr {
+		margin-bottom: 0;
+	}
+
+	.skill-lists {
+		display: flex;
+		justify-content: center;
+	}
+
+	.skill-block {
+		margin: 0 25px;
+	}
 }
 
 .contact {
