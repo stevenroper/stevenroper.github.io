@@ -85,12 +85,13 @@
     <div class='contact'>
       <div class='contact__container'>
         <h2>Let's make something.</h2>
-        <form>
-          <input type='text' placeholder="NAME">
-          <input type='email' placeholder="EMAIL">
-          <input type='text' placeholder="SUBJECT">
+        <form action='http://formspree.io/steven.m.roper@gmail.com' method="POST">
+          <input type='text' placeholder="NAME" name='Name'>
+          <input type='email' placeholder="EMAIL" name='_replyto'>
+          <input type='text' placeholder="SUBJECT" name='_subject'>
           <textarea rows='1' placeholder="MESSAGE"></textarea>
-          <button type='submit' class='email-submit-btn'>SUBMIT</button>
+          <button type='submit' class='email-submit-btn' value='Send'>SUBMIT</button>
+          <input type="hidden" name="_next" value="/#" />
         </form>
       </div>
     </div>
