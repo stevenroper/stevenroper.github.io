@@ -237,7 +237,17 @@ html, body {
 	background: #000;
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (max-width: 450px) {
+	.info__name {
+		font-size: 3em;
+	}
+
+	.info__sub {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 600px) {
 	.info__name {
 		font-size: 6em;
 	}
